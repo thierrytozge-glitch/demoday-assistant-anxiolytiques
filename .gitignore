@@ -1,0 +1,17 @@
+﻿# Secrets — NE JAMAIS COMMITER
+.env
+
+# Environnement virtuel
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# OS
+Thumbs.db
+.DS_Store

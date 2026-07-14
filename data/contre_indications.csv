@@ -1,0 +1,7 @@
+﻿contexte_patient,classe_a_risque,niveau,alerte,source
+opioides,Anxiolytique (benzodiazépine),Vigilance élevée,L'association opioïdes + benzodiazépines majore le risque de dépression respiratoire (pronostic vital). Association à éviter ou sous surveillance étroite.,"HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+opioides,Gabapentinoïde (prégabaline),Vigilance élevée,L'association opioïdes + gabapentinoïdes (prégabaline) augmente le risque de dépression respiratoire.,"HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+opioides,Antidépresseur (tricyclique),Vigilance,Les antidépresseurs tricycliques sont dépresseurs du SNC : prudence en association avec les opioïdes (risque respiratoire).,"HAS, Bon usage des opioïdes, mars 2022, §3.1.2 / instauration MSO"
+opioides,Anxiolytique (antihistaminique),Vigilance,Hydroxyzine + méthadone : risque d'allongement du QT / troubles du rythme. Prudence.,"HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+opioides,Antidépresseur (ISRS),Vigilance ciblée,Escitalopram + méthadone : risque d'allongement du QT. Prudence (concerne surtout l'escitalopram).,"HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+alcool,Anxiolytique (benzodiazépine),Vigilance élevée,Alcool + benzodiazépines : majoration de la dépression du SNC. Association déconseillée.,"HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3 (principe dépresseurs SNC)"

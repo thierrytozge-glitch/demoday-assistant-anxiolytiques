@@ -1,0 +1,358 @@
+{
+  "reference": [
+    {
+      "substance_norm": "alprazolam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "bromazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "clobazam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "clorazépate dipotassique",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "clotiazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "diazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "loflazépate d'éthyle",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "lorazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "oxazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "prazépam",
+      "classe": "Anxiolytique (benzodiazépine)",
+      "trouble": "Anxiété",
+      "indication_has": "Traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes"
+    },
+    {
+      "substance_norm": "hydroxyzine",
+      "classe": "Anxiolytique (antihistaminique)",
+      "trouble": "Anxiété légère",
+      "indication_has": "Manifestations mineures de l'anxiété chez l'adulte"
+    },
+    {
+      "substance_norm": "buspirone",
+      "classe": "Anxiolytique",
+      "trouble": "Anxiété généralisée",
+      "indication_has": "Traitement de l'anxiété (trouble anxiété généralisée)"
+    },
+    {
+      "substance_norm": "citalopram",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "Trouble panique",
+      "indication_has": "Trouble panique avec ou sans agoraphobie"
+    },
+    {
+      "substance_norm": "escitalopram",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "Anxiété généralisée / panique / anxiété sociale",
+      "indication_has": "TAG, trouble panique, trouble anxiété sociale, TOC"
+    },
+    {
+      "substance_norm": "fluoxétine",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "TOC",
+      "indication_has": "Troubles obsessionnels compulsifs"
+    },
+    {
+      "substance_norm": "fluvoxamine",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "TOC",
+      "indication_has": "Troubles obsessionnels compulsifs"
+    },
+    {
+      "substance_norm": "paroxétine",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "Anxiété sociale / panique / TOC / ESPT / TAG",
+      "indication_has": "TAG, trouble panique, anxiété sociale, TOC, ESPT"
+    },
+    {
+      "substance_norm": "sertraline",
+      "classe": "Antidépresseur (ISRS)",
+      "trouble": "Trouble panique / TOC / anxiété sociale / ESPT",
+      "indication_has": "Trouble panique, TOC, anxiété sociale, ESPT"
+    },
+    {
+      "substance_norm": "venlafaxine",
+      "classe": "Antidépresseur (IRSNa)",
+      "trouble": "Anxiété généralisée / panique / anxiété sociale",
+      "indication_has": "TAG, trouble panique, trouble anxiété sociale"
+    },
+    {
+      "substance_norm": "duloxétine",
+      "classe": "Antidépresseur (IRSNa)",
+      "trouble": "Anxiété généralisée",
+      "indication_has": "Trouble anxiété généralisée"
+    },
+    {
+      "substance_norm": "clomipramine",
+      "classe": "Antidépresseur (tricyclique)",
+      "trouble": "TOC / trouble panique",
+      "indication_has": "TOC, prévention des attaques de panique"
+    },
+    {
+      "substance_norm": "cyamémazine",
+      "classe": "Antipsychotique",
+      "trouble": "Anxiété (2e intention)",
+      "indication_has": "Traitement de courte durée de l'anxiété de l'adulte en cas d'échec des thérapeutiques habituelles"
+    },
+    {
+      "substance_norm": "sulpiride",
+      "classe": "Antipsychotique",
+      "trouble": "Anxiété (2e intention)",
+      "indication_has": "Traitement de courte durée de l'anxiété de l'adulte en cas d'échec des thérapeutiques habituelles"
+    }
+  ],
+  "ansm": [
+    {
+      "nom_court": "Quasym L.P.",
+      "substance": "méthylphénidate",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Zypadhera 300 mg",
+      "substance": "olanzapine (pamoate d') monohydraté",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Méthylphénidate Viatris LP",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Téralithe 250 mg",
+      "substance": "lithium (carbonate de)",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Rispéridone 0",
+      "substance": "rispéridone",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Méthylphénidate EG LP 18 mg",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Concerta LP 36 mg",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Méthylphénidate EG LP 36 mg et 54 mg",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Largactil 100 mg",
+      "substance": "chlorpromazine (chlorhydrate de)",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Rispéridone 3 mg comprimé orodispersible",
+      "substance": "rispéridone",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "Tranxène 20 mg/2 ml",
+      "substance": "clorazépate dipotassique",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "Concerta LP 18 mg",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Concerta LP 54 mg",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Fluvoxamine 100 mg",
+      "substance": "fluvoxamine (maléate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Lyrica 20 mg/ml",
+      "substance": "prégabaline",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Zypadhera 405 mg",
+      "substance": "olanzapine (pamoate d') monohydraté",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Zypadhera 210 mg",
+      "substance": "olanzapine (pamoate d') monohydraté",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Tofranil 10 mg",
+      "substance": "imipramine",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "Téralithe LP 400 mg",
+      "substance": "lithium (carbonate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Spécialités à base de Venlafaxine LP 37",
+      "substance": "venlafaxine",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Clomipramine Viatris 25 mg",
+      "substance": "clomipramine (chlorhydrate de)",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Tercian 50 mg/5 ml",
+      "substance": "cyamémazine",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Largactil 25 mg",
+      "substance": "chlorpromazine (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Méthylphénidate Biogaran",
+      "substance": "méthylphénidate (chlorhydrate de)",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Rispéridone L.P. 25 mg/2 ml",
+      "substance": "rispéridone",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "RisperdalConsta L.P. 25 mg/2 ml",
+      "substance": "rispéridone",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Venlafaxine Viatris 50 mg",
+      "substance": "venlafaxine",
+      "statut": "Remise à disposition"
+    },
+    {
+      "nom_court": "Ludiomil 25 et 75 mg",
+      "substance": "maprotiline (chlorhydrate de)",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "Paliperidone Biogaran",
+      "substance": "palipéridone",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "Quetiapine LP (Xeroquel LP) 50 mg",
+      "substance": "quétiapine (fumarate de)",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Palipéridone Teva",
+      "substance": "palipéridone",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Xeplion",
+      "substance": "palipéridone",
+      "statut": "Tension d'approvisionnement"
+    },
+    {
+      "nom_court": "Marsilid 50 mg",
+      "substance": "iproniazide",
+      "statut": "Rupture de stock"
+    },
+    {
+      "nom_court": "SEMAP 20 mg|",
+      "substance": NaN,
+      "statut": "Rupture de stock"
+    }
+  ],
+  "contre_indications": [
+    {
+      "contexte_patient": "opioides",
+      "classe_a_risque": "Anxiolytique (benzodiazépine)",
+      "niveau": "Vigilance élevée",
+      "alerte": "L'association opioïdes + benzodiazépines majore le risque de dépression respiratoire (pronostic vital). Association à éviter ou sous surveillance étroite.",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+    },
+    {
+      "contexte_patient": "opioides",
+      "classe_a_risque": "Gabapentinoïde (prégabaline)",
+      "niveau": "Vigilance élevée",
+      "alerte": "L'association opioïdes + gabapentinoïdes (prégabaline) augmente le risque de dépression respiratoire.",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+    },
+    {
+      "contexte_patient": "opioides",
+      "classe_a_risque": "Antidépresseur (tricyclique)",
+      "niveau": "Vigilance",
+      "alerte": "Les antidépresseurs tricycliques sont dépresseurs du SNC : prudence en association avec les opioïdes (risque respiratoire).",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §3.1.2 / instauration MSO"
+    },
+    {
+      "contexte_patient": "opioides",
+      "classe_a_risque": "Anxiolytique (antihistaminique)",
+      "niveau": "Vigilance",
+      "alerte": "Hydroxyzine + méthadone : risque d'allongement du QT / troubles du rythme. Prudence.",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+    },
+    {
+      "contexte_patient": "opioides",
+      "classe_a_risque": "Antidépresseur (ISRS)",
+      "niveau": "Vigilance ciblée",
+      "alerte": "Escitalopram + méthadone : risque d'allongement du QT. Prudence (concerne surtout l'escitalopram).",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3"
+    },
+    {
+      "contexte_patient": "alcool",
+      "classe_a_risque": "Anxiolytique (benzodiazépine)",
+      "niveau": "Vigilance élevée",
+      "alerte": "Alcool + benzodiazépines : majoration de la dépression du SNC. Association déconseillée.",
+      "source": "HAS, Bon usage des opioïdes, mars 2022, §1.2.3.3 (principe dépresseurs SNC)"
+    }
+  ]
+}

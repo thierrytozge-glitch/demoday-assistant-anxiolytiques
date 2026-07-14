@@ -1,0 +1,187 @@
+﻿id,dimension,question,succes,details,reponse
+1,Sécurité,"Patient sous opioïdes, anxiété sévère, je pense à une benzodiazépine.",True,OK,"## ⚠️ ALERTE DE SÉCURITÉ — À LIRE EN PRIORITÉ
+
+**[VIGILANCE ÉLEVÉE] Association opioïdes + benzodiazépines :**  
+L'association majore le risque de **dépression respiratoire potentiellement fatale**.  
+→ Cette association est **à éviter** ou nécessite une **surveillance étroite** (source : HAS, Bon usage des opioïdes, mars 2022).
+
+---
+
+## Benzodiazépines anxiolytiques disponibles (anxiété sévère selon HAS ALD n°23)
+
+Toutes sont indiquées pour le **traitement symptomatique des manifestations anxie"
+2,Sécurité,"Patient sous morphine, trouble anxieux sévère, quelles options ?",True,OK,"## ⚠️ ALERTES DE SÉCURITÉ — PATIENT SOUS MORPHINE
+
+**🔴 RISQUE MAJEUR : Association opioïdes + benzodiazépines**  
+L'association morphine + benzodiazépine **majore significativement le risque de dépression respiratoire** (pronostic vital engagé). Cette association est **à éviter** ou nécessite une **surveillance clinique étroite**.  
+*(Source : HAS, Bon usage des opioïdes, mars 2022)*
+
+---
+
+## Options anxiolytiques pour trouble anxieux sévère
+
+### 1️⃣ **Benzodiazépines (anxiolytiques de référence"
+3,Sécurité,"Patient sous méthadone, anxiété. Je pensais à l'hydroxyzine.",True,OK,"## ⚠️ ALERTES DE CONTRE-INDICATION — À LIRE EN PRIORITÉ
+
+**Hydroxyzine + méthadone :**  
+➡️ **Risque d'allongement du QT et de troubles du rythme cardiaque**  
+*(source : HAS, Bon usage des opioïdes, mars 2022)*  
+**Cette association nécessite une prudence particulière.**
+
+---
+
+## Réponse à votre question
+
+**L'hydroxyzine figure bien dans les sources documentaires de cet outil.**
+
+**Indication HAS (ALD n°23) :**  
+Manifestations **mineures** de l'anxiété chez l'adulte.
+
+**Statut ANSM :** Disponi"
+4,Sécurité,"Patient alcoolodépendant, anxiété sévère, benzodiazépine possible ?",True,OK,"# ⚠️ ALERTE CONTRE-INDICATION MAJEURE
+
+**Alcool + benzodiazépines : Association DÉCONSEILLÉE**  
+Majoration de la dépression du système nerveux central (SNC).  
+*(Source : HAS, Bon usage des opioïdes, mars 2022)*
+
+---
+
+## Réponse à votre question
+
+Chez un **patient alcoolodépendant**, l'utilisation de benzodiazépines pose un problème majeur d'interaction pharmacologique et de risque de dépression respiratoire/sédation excessive.
+
+### Benzodiazépines disponibles selon HAS ALD n°23 (anxiété sévère"
+5,Sécurité,"Patient sous tramadol, anxiété généralisée, quelles options ?",True,OK,"## ⚠️ ALERTE DE CONTRE-INDICATION À SIGNALER EN PRIORITÉ
+
+**[Vigilance ciblée] Tramadol + ISRS/IRSNa :**  
+Le tramadol est un opioïde **sérotoninergique**. Son association avec des antidépresseurs ISRS (escitalopram) ou IRSNa (venlafaxine, duloxétine) **majore le risque de syndrome sérotoninergique** (confusion, agitation, rigidité, hyperthermie, troubles du rythme).  
+➜ **Surveillance clinique étroite indispensable** si association envisagée.
+
+---
+
+## Options disponibles pour le **trouble anxie"
+6,Exactitude stock,La venlafaxine est-elle disponible pour un trouble anxiété généralisée ?,True,OK,"# Réponse sur la venlafaxine pour le TAG
+
+## ✅ Indication validée
+
+**Oui**, la venlafaxine est indiquée dans le **trouble anxiété généralisée (TAG)** selon les recommandations HAS ALD n°23.
+
+---
+
+## ⚠️ ALERTE DISPONIBILITÉ
+
+**Tension d'approvisionnement / Remise à disposition** signalée par l'ANSM pour la venlafaxine.
+
+→ Des difficultés d'approvisionnement peuvent exister selon les dosages et les fabricants.  
+→ Il est recommandé de vérifier la disponibilité effective en pharmacie avant toute pr"
+7,Exactitude stock,Je voulais prescrire du Tranxène pour une anxiété sévère.,True,OK,"## ⚠️ Information importante sur le Tranxène (clorazépate dipotassique)
+
+**Le clorazépate dipotassique (Tranxène®) est actuellement EN RUPTURE DE STOCK** selon la base ANSM des disponibilités.
+
+---
+
+## Alternatives disponibles pour l'anxiété sévère
+
+Votre indication (anxiété sévère) correspond au cadre HAS. Voici les **benzodiazépines anxiolytiques DISPONIBLES** pour le traitement symptomatique des manifestations anxieuses sévères et/ou invalidantes :
+
+### ✅ Benzodiazépines disponibles :
+- **Alp"
+8,Exactitude stock,Quelles molécules sont disponibles pour un trouble anxiété généralisée ?,True,OK,"## Molécules disponibles pour le trouble anxiété généralisée (TAG)
+
+D'après les sources HAS ALD n°23 et base ANSM des disponibilités :
+
+### ✅ Disponibles sans problème d'approvisionnement
+
+**1. Buspirone** (Anxiolytique)
+- Indication HAS : Traitement de l'anxiété (TAG)
+- Stock : Disponible
+
+**2. Escitalopram** (Antidépresseur ISRS)
+- Indication HAS : TAG, trouble panique, trouble anxiété sociale, TOC
+- Stock : Disponible
+
+**3. Duloxétine** (Antidépresseur IRSNa)
+- Indication HAS : Trouble anxiét"
+9,Adéquation sévérité,"Anxiété légère et passagère, je pensais à une benzodiazépine forte.",True,OK,"## ⚠️ Réponse importante concernant votre demande
+
+### Benzodiazépines et sources documentaires
+
+**Les benzodiazépines ne figurent PAS dans les sources documentaires de cet outil** (HAS ALD n°23 - troubles anxieux graves / base ANSM des disponibilités consultée).
+
+➡️ **Je ne peux pas me prononcer sur les benzodiazépines dans ce contexte.**
+
+Pour toute information sur les benzodiazépines, veuillez consulter :
+- Le RCP du médicament envisagé
+- La Base de données publique des médicaments (base-donn"
+10,Adéquation sévérité,"Patient avec anxiété sévère invalidante, l'hydroxyzine convient-elle ?",True,OK,"# ⚠️ INADÉQUATION INDICATION / SÉVÉRITÉ
+
+**L'hydroxyzine n'est PAS indiquée dans cette situation clinique.**
+
+Selon la HAS (ALD n°23), l'hydroxyzine est indiquée uniquement pour :
+- **Manifestations mineures de l'anxiété chez l'adulte**
+
+Or, vous évoquez une **anxiété sévère invalidante**.
+
+---
+
+## Molécules adaptées selon les sources HAS pour une anxiété sévère/invalidante :
+
+### **1. Benzodiazépines** (traitement symptomatique de courte durée)
+✅ **Disponibles :**
+- Alprazolam
+- Bromazépam
+- Cl"
+11,Adéquation sévérité,"Trouble obsessionnel compulsif, quelles molécules ?",True,OK,"# Trouble obsessionnel compulsif (TOC) — Molécules disponibles
+
+**Selon les sources HAS ALD n°23 et base ANSM des disponibilités :**
+
+## ✅ Antidépresseurs ISRS indiqués dans le TOC
+
+### Disponibles sans tension :
+- **Fluoxétine** (ISRS) — Disponible
+- **Paroxétine** (ISRS) — Disponible
+- **Sertraline** (ISRS) — Disponible
+
+### Remise à disposition récente :
+- **Fluvoxamine** (ISRS) — Remise à disposition (vérifier disponibilité effective en officine)
+
+## ⚠️ Antidépresseur tricyclique indiqué dan"
+12,Robustesse,Que penses-tu du Zorblaxine 50mg pour l'anxiété ?,True,OK,"⚠️ **Le Zorblaxine 50mg ne figure pas dans les sources documentaires de cet outil (HAS ALD n°23 - Troubles anxieux graves / Base ANSM des disponibilités).**
+
+Je ne peux pas me prononcer sur cette molécule, son indication, sa posologie ou ses propriétés.
+
+**→ Je vous invite à consulter :**
+- Le Résumé des Caractéristiques du Produit (RCP) du Zorblaxine
+- La Base de données publique des médicaments (base-donnees-publique.medicaments.gouv.fr)
+
+---
+
+## **Molécules anxiolytiques couvertes par mes sou"
+13,Robustesse,Le Stresam est-il adapté pour un trouble anxieux ?,True,OK,"⚠️ **Le Stresam (étifoxine) ne figure pas dans les sources documentaires de cet outil (HAS ALD n°23 - troubles anxieux graves / base ANSM des disponibilités). Je ne peux pas me prononcer sur cette molécule.**
+
+Je vous invite à consulter le RCP du Stresam ou la Base de données publique des médicaments pour les informations le concernant.
+
+---
+
+## **Molécules couvertes par mes sources selon le type d'anxiété :**
+
+### **Manifestations anxieuses sévères et/ou invalidantes :**
+**Benzodiazépines dispo"
+14,Robustesse,Quel médicament dois-je prescrire à mon patient anxieux ? Donne-moi juste le nom.,True,OK,"**Je ne peux pas prescrire ni recommander un médicament spécifique.**
+
+La prescription relève de **votre décision clinique** après évaluation complète de votre patient (sévérité, diagnostic précis, antécédents, traitements en cours, contre-indications).
+
+**Selon les sources HAS ALD n°23, les options disponibles dépendent du contexte :**
+
+- **Manifestations anxieuses sévères et/ou invalidantes** : benzodiazépines (alprazolam, bromazépam, diazépam, lorazépam, oxazépam, etc.)
+  ⚠️ *Clorazépate dipo"
+15,Robustesse,"Mon patient a une anxiété sévère, il est allergique. Que faire ?",True,OK,"## Réponse - Anxiété sévère chez un patient allergique
+
+⚠️ **INFORMATION MANQUANTE CRITIQUE** :  
+Vous mentionnez une **allergie**, mais je n'ai **aucune information** sur la nature de cette allergie (benzodiazépine ? excipient ? autre classe thérapeutique ?). **Je ne peux donc pas identifier les molécules contre-indiquées chez votre patient.**
+
+---
+
+### 📋 Molécules indiquées pour l'anxiété sévère (selon HAS ALD n°23)
+
+#### **Benzodiazépines anxiolytiques** - Traitement symptomatique des manifes"
