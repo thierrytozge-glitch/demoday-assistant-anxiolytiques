@@ -4,6 +4,7 @@
 # Lancement : streamlit run script\12_interface.py
 
 import sys
+import json
 from pathlib import Path
 import requests
 import streamlit as st
@@ -77,10 +78,11 @@ with st.sidebar:
     st.header("⚠️ Limites")
     st.markdown("""
 - Périmètre : **troubles anxieux uniquement**
+- **Adulte uniquement** (pédiatrie hors périmètre)
 - Aucune molécule hors sources n'est commentée
 - Aucune donnée patient (allergies, antécédents)
 - Contre-indications **non exhaustives**
-  *(interactions principales seulement)*
+- Données ANSM **figées** à la date d'export
 - Ne remplace pas le RCP ni le prescripteur
     """)
 
@@ -120,6 +122,18 @@ def appeler_n8n(q):
     return r.json()
 
 
+def parser_sources(valeur):
+    """Les sources arrivent de n8n sous forme de chaîne JSON. On la parse en liste."""
+    if not valeur:
+        return []
+    if isinstance(valeur, list):
+        return valeur
+    try:
+        return json.loads(valeur)
+    except (json.JSONDecodeError, TypeError):
+        return []
+
+
 # --- Traitement ---
 if lancer and question.strip():
     spinner_txt = "Appel de la pipeline n8n..." if mode.startswith("Pipeline") else "Traitement local..."
@@ -134,6 +148,7 @@ if lancer and question.strip():
                     "alertes": data.get("alertes", "") or "",
                     "contextes": [],
                     "faits": "(traitement effectué côté n8n)",
+                    "sources": parser_sources(data.get("sources_utilisees")),
                     "id_base": data.get("id"),
                 }
             else:
@@ -145,6 +160,7 @@ if lancer and question.strip():
                     "alertes": r["alertes"],
                     "contextes": r.get("contextes_detectes", []),
                     "faits": r["faits"],
+                    "sources": r.get("sources_utilisees", []),
                     "id_base": None,
                 }
         except Exception as e:
@@ -176,6 +192,20 @@ if lancer and question.strip():
     # --- Réponse ---
     st.markdown("---")
     st.markdown(resultat["reponse"])
+
+    # --- Sources mobilisées pour cette réponse ---
+    if resultat.get("sources"):
+        st.markdown("---")
+        st.markdown("#### 📄 Sources officielles mobilisées pour cette réponse")
+        for s in resultat["sources"]:
+            st.markdown(
+                f"**[{s['titre']}]({s['url']})**  \n"
+                f"*{s['role']} — {s['date']}*"
+            )
+        st.caption(
+            "⚠️ Les données de disponibilité ANSM sont figées à la date de l'export "
+            "indiquée ci-dessus. Vérifiez la disponibilité en temps réel sur le site de l'ANSM."
+        )
 
     # --- Traçabilité ---
     with st.expander("🔬 Données brutes transmises au modèle (traçabilité)"):

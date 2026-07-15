@@ -1,0 +1,6 @@
+﻿id,attendues,trouvees,manquantes,recall
+R1,5,4,paroxétine,0.8
+R2,6,5,escitalopram,0.8333333333333334
+R3,6,6,,1.0
+R4,10,10,,1.0
+R5,4,4,,1.0

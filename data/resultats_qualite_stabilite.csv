@@ -1,0 +1,6 @@
+﻿id,question,stable,signatures_distinctes
+S1,"Patient sous opioïdes, anxiété sévère, quelles options ?",True,1
+S2,Quelles molécules pour le trouble obsessionnel compulsif ?,True,1
+S3,"Patient de 78 ans, anxiété sévère, benzodiazépine possible ?",True,1
+S4,Le Stresam est-il adapté pour l'anxiété ?,True,1
+S5,"Patient avec anxiété sévère et syndrome dépressif, benzodiazépine seule ?",True,1

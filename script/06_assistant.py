@@ -45,6 +45,54 @@ NOMS_COMMERCIAUX = {
 MOTS_OPIOIDES = ["opio", "morphine", "tramadol", "méthadone", "methadone",
                  "codéine", "codeine", "oxycodone", "fentanyl", "buprénorphine"]
 
+# ============================================================
+# CATALOGUE DES SOURCES (avec liens officiels)
+# ============================================================
+
+SOURCES_CATALOGUE = {
+    "has_ald23": {
+        "titre": "HAS — ALD n°23, Actes et prestations sur les troubles anxieux graves",
+        "date": "actualisation janvier 2025",
+        "role": "Indications thérapeutiques par trouble",
+        "url": "https://www.has-sante.fr/upload/docs/application/pdf/2025-01/ald_n23_actes_et_prestations_sur_les_troubles_anxieux_graves_-_actualisation_janvier_2025.pdf",
+    },
+    "ansm_dispo": {
+        "titre": "ANSM — Base des disponibilités des médicaments",
+        "date": "export du 08/07/2026",
+        "role": "Statut de stock (rupture / tension / remise à disposition)",
+        "url": "https://ansm.sante.fr/disponibilites-des-produits-de-sante/medicaments",
+    },
+    "has_opioides": {
+        "titre": "HAS — Bon usage des opioïdes",
+        "date": "mars 2022",
+        "role": "Contre-indications et interactions à risque",
+        "url": "https://www.has-sante.fr/upload/docs/application/pdf/2022-03/reco_opioides.pdf",
+    },
+    "ansm_benzo": {
+        "titre": "ANSM — Bon usage des benzodiazépines",
+        "date": "mis à jour 03/09/2025",
+        "role": "Règles de bon usage (durée, personne âgée, dépendance, demi-vies)",
+        "url": "https://ansm.sante.fr/dossiers-thematiques/bon-usage-des-benzodiazepines",
+    },
+}
+
+
+def sources_utilisees(tableau_faits, alertes, contextes):
+    """
+    Renvoie la liste des sources RÉELLEMENT mobilisées pour cette réponse,
+    en fonction des blocs de données qui ont été activés.
+    """
+    cles = []
+    if tableau_faits:
+        cles.append("has_ald23")
+        cles.append("ansm_dispo")
+    if "opioides" in contextes or "alcool" in contextes:
+        cles.append("has_opioides")
+    if alertes or contextes:
+        cles.append("ansm_benzo")
+    cles = list(dict.fromkeys(cles))
+    return [SOURCES_CATALOGUE[c] for c in cles]
+
 
 # ============================================================
 # DÉTECTION DE L'ÂGE DU PATIENT
@@ -151,7 +199,6 @@ def detecter_incoherences(question):
     incoherences = []
     ages = extraire_age_patient(question)
 
-    # 1. Patient mineur — les sources portent sur l'adulte
     mineurs = [a for a in ages if a < 18]
     if mineurs:
         incoherences.append(
@@ -162,7 +209,6 @@ def detecter_incoherences(question):
             "et un avis spécialisé."
         )
 
-    # 2. Contradiction de sévérité
     severes = ["sévère", "severe", "grave", "invalidant"]
     legers = ["légè", "leger", "léger", "mineur", "passag"]
     if any(m in q for m in severes) and any(m in q for m in legers):
@@ -171,14 +217,12 @@ def detecter_incoherences(question):
             "Ces qualifications sont incompatibles et orientent vers des classes thérapeutiques différentes."
         )
 
-    # 3. Plusieurs âges patient contradictoires
     if len(set(ages)) > 1:
         incoherences.append(
             f"Plusieurs âges différents sont mentionnés pour le patient : {sorted(set(ages))} ans. "
             "L'âge est déterminant (les recommandations changent à partir de 65 ans)."
         )
 
-    # 4. "Aucun traitement" alors qu'un traitement opioïde est cité
     dit_aucun_traitement = any(m in q for m in ["aucun traitement", "pas de traitement",
                                                 "sans traitement", "aucun médicament"])
     cite_traitement = any(m in q for m in MOTS_OPIOIDES)
@@ -188,7 +232,6 @@ def detecter_incoherences(question):
             "Cette contradiction doit être levée : la présence d'un opioïde change radicalement l'analyse."
         )
 
-    # 5. "Aucune addiction" alors qu'une dépendance est citée
     dit_aucune_addiction = any(m in q for m in ["aucune addiction", "pas d'addiction",
                                                 "sans addiction", "aucune dépendance"])
     cite_addiction = any(m in q for m in ["alcoolodépendant", "alcoolique", "dépendance à"])
@@ -197,7 +240,6 @@ def detecter_incoherences(question):
             "La question indique 'aucune addiction' MAIS mentionne une dépendance. Contradiction à lever."
         )
 
-    # 6. Incohérence de genre (masculin + grossesse)
     masculin = any(m in q for m in [" il ", "monsieur", "homme"])
     grossesse = any(m in q for m in ["enceinte", "grossesse"])
     if masculin and grossesse and "patiente" not in q and "femme" not in q:
@@ -373,6 +415,7 @@ def repondre(question):
     reg_gen = regles_generales()
     incoherences = detecter_incoherences(question)
     texte, tronquee = rediger(question, tableau, alertes, reg_gen, incoherences)
+    sources = sources_utilisees(tableau, alertes, contextes)
     return {
         "question": question,
         "trouble_cible": mot_cle,
@@ -382,19 +425,20 @@ def repondre(question):
         "contextes_detectes": contextes,
         "incoherences": incoherences,
         "molecules_citees_reconnues": sorted(citees),
+        "sources_utilisees": sources,
         "reponse": texte,
         "tronquee": tronquee,
     }
 
 
 if __name__ == "__main__":
-    q = ("Mon patient est âgé de 20 ans, il n'a aucun traitement. Il est sous morphine depuis "
-         "3 ans pour des douleurs chroniques. Il présente des troubles anxieux sévères, mais très "
-         "légers et passagers. Quels médicaments seraient adéquats ?")
+    q = "Patient sous morphine, anxiété sévère, quelles options ?"
     r = repondre(q)
     print(f"--- Trouble : {r['trouble_cible']} | {r['nb_molecules']} molécules ---")
-    print(f"--- Âges patient : {extraire_age_patient(q)} ---")
     print(f"--- Contextes : {r['contextes_detectes'] or '(aucun)'} ---")
-    print(f"--- Incohérences : {len(r['incoherences'])} ---")
-    print(f"\n--- Alertes ---\n{r['alertes'] or '(AUCUNE — PROBLÈME !)'}")
-    print(f"\n--- Réponse ---\n{r['reponse'][:800]}...")
+    print(f"\n--- Sources utilisées ---")
+    for s in r["sources_utilisees"]:
+        print(f"  • {s['titre']} ({s['date']})")
+        print(f"    {s['role']}")
+        print(f"    {s['url']}")
+    print(f"\n--- Réponse (extrait) ---\n{r['reponse'][:400]}...")
